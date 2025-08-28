@@ -24,6 +24,6 @@ public class GameSettings {
 
     //Метод
     void printGameStatus() {
-        System.out.println("Название: " + this.gameName + ", Текущее количество игроков: " + currentPlayers + ", Макс. количество игороков: " + maxPlayers);
+        System.out.println("Название: " + this.gameName + ", Текущее количество игроков: " + currentPlayers + ", Макс. количество игроков: " + maxPlayers);
     }
 }

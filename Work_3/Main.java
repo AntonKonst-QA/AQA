@@ -63,8 +63,8 @@ public class Main {
 
 
         //Класс Person
-        Person fN1 = new Person("Иван", "Иванов", 123+"-"+45+"-"+6789);
-        Person fN2 = new Person("Петр", "Петров", 987+"-"+65+"-"+4321);
+        Person fN1 = new Person("Иван", "Иванов", "123-45-6789");
+        Person fN2 = new Person("Петр", "Петров", "987-65-4321");
 
         fN1.printPersonInfo();
         fN2.printPersonInfo();
