@@ -38,19 +38,19 @@ public class Main {
 
         // For
         // Вывод чтсел от 1 до 100, делящихся на 3
-        For.outNum();
+        For.outputOfNumberUpToOneHundred();
 
         // 2. Сумма чисел от 1 до n
-        For.sumOfNum();
+        For.sumOfNumbers();
 
         // 3.  Таблица умножения для числа
-        For.multiTable();
+        For.multiplicationTable();
 
         // 4. Проверка на простое число
         For.simpleNumber();
 
         // 5. Вывод чисел от 1 до 10
-        For.outputOfNum();
+        For.outputOfNumberUpToTen();
 
         // Класс While
         // 1. Вычисление факториала с помощью while
@@ -87,7 +87,7 @@ public class Main {
         BandC.numberOmission();
 
         // 3. Вывод только положительных чисел (использовать continue)
-        BandC.outOfPos();
+        BandC.outputOfPositiveNumber();
 
         // 4. Ввод строк до команды "stop" (использовать break)
         BandC.stringInput();

@@ -46,18 +46,6 @@ public static void conversationNum() {
             case 6 -> System.out.println("Ваша оценка - D");
             case 5, 4, 3, 2, 1, 0 -> System.out.println("Ваша оценка - F");
         }
-
-        if (num >= 90 & num <= 100) {
-            System.out.println("Ваша оценка - A");
-        } else if (num >=80 & num <= 89) {
-            System.out.println("Ваша оценка - B");
-        } else if (num >= 70 & num <= 79) {
-            System.out.println("Ваша оценка - C");
-        } else if (num >= 60 & num <= 69) {
-            System.out.println("Ваша оценка - D");
-        } else {
-            System.out.println("Ваша оценка - F");
-        }
 }
 
 // 4. Обработка текстовых команд

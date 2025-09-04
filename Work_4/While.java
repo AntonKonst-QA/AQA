@@ -38,7 +38,7 @@ public class While {
         int num = sc.nextInt();
 
         while (num >= 1) {
-            System.out.println(num + " ");
+            System.out.println(num);
             num--;
         }
     }

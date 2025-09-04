@@ -22,12 +22,12 @@ public class BandC {
     public static void numberOmission() {
         for (int i =1 ; i <= 20; i++) {
             if (i % 3 == 0) continue;
-            System.out.println(i + " ");
+            System.out.println(i);
         }
     }
 
     // 3. Вывод только положительных чисел (использовать continue)
-    public static void outOfPos() {
+    public static void outputOfPositiveNumber() {
         Scanner sc = new Scanner(System.in);
         while (true) {
             System.out.println("Введите число:");

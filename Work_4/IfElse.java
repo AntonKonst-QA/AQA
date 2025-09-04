@@ -39,13 +39,6 @@ public class IfElse {
         System.out.println("Введите оценку от 1 до 5:");
         int num = sc.nextInt();
 
-        switch (num) {
-            case 5 -> System.out.println("Отлично");
-            case 4 -> System.out.println("Хорошо");
-            case 3 -> System.out.println("Удовлетворительно");
-            case 2, 1 -> System.out.println("Неудовлетворительно");
-        }
-
         if (num == 5) {
             System.out.println("Отлично");
         } else if (num == 4) {
@@ -77,7 +70,7 @@ public class IfElse {
         System.out.println("Введите ваш возраст:");
         int num = sc.nextInt();
 
-        if (num < 18 & num > 0) {
+        if (num < 18 && num > 0) {
             System.out.println("Ваша скидка 25%");
         } else if (num >= 65) {
             System.out.println("Ваша скидка 30%");
@@ -92,11 +85,11 @@ public class IfElse {
         System.out.println("Введите ваш балл:");
         int num = sc.nextInt();
 
-        if (num >= 90 & num <= 100) {
+        if (num >= 90 && num <= 100) {
             System.out.println("Отлично");
-        } else if (num >=75 & num <=89) {
+        } else if (num >=75 && num <=89) {
             System.out.println("Хорошо");
-        } else if (num >=60 & num <=74) {
+        } else if (num >=60 && num <=74) {
             System.out.println("Удовлетворительно");
         } else {
             System.out.println("Неудовлетворительно");
