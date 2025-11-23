@@ -8,12 +8,12 @@ class InvalidAgeException  extends Exception{
 public class Task3_CheckAge {
     public static void main(String[] args) {
         try {
-            CheckAge(151);
+            checkAge(151);
         } catch (InvalidAgeException e) {
             System.out.println("Ошибка! " + e.getMessage());
         }
     }
-    public static void CheckAge (int age) throws InvalidAgeException {
+    public static void checkAge (int age) throws InvalidAgeException {
         if (age < 0 || age > 150) {
             throw new InvalidAgeException ("Недопустимый возраст: " + age);
         } else {

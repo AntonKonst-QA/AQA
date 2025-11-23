@@ -11,11 +11,16 @@ class InvalidEmailException extends RuntimeException {
 
 public class Task4_CheckEmail {
     public static void main(String[] args) {
-        validateEmail ("test@mail.com");
-        validateEmail ("invalid-email");
+
+        try {
+            validateEmail("test@mail.com");
+            validateEmail("invalid-email");
+        } catch (InvalidEmailException e) {
+            System.out.println("Ошибка: " + e.getMessage());
+        }
     }
     public static void validateEmail (String email) {
-        Pattern pattern = Pattern.compile("^[\\w,-]+@[\\w.-]+\\.[a-z] {2,}$");
+        Pattern pattern = Pattern.compile("^[\\w,-]+@[\\w.-]+\\.[a-z]{2,}$");
         Matcher matcher = pattern.matcher(email);
        if (!matcher.matches()) {
            throw new InvalidEmailException("Неверный формат email: " + email);
