@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 class Movie {
-    private String title;
+    private final String title;
 
     public Movie(String title) {
         this.title = title;
@@ -26,10 +26,12 @@ class Movie {
     public int hashCode() {
         return Objects.hash(title);
     }
+
+
 }
 
 public class Task4_Rating<T extends Number> {
-    private T value;
+    private final T value;
 
     public Task4_Rating(T value) {
         this.value = value;
@@ -60,7 +62,8 @@ class MovieService {
 
     public List<Movie> sortByRatingDesc() {
         return ratings.keySet().stream()
-                .sorted((m1, m2) -> Double.compare(averageRating(m2), averageRating(m1)))
+                .sorted(Comparator.comparingDouble(this::averageRating).reversed())
                 .collect(Collectors.toList());
     }
+
 }

@@ -1,10 +1,7 @@
 package Homework.Work_13;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 enum Status {
@@ -76,5 +73,9 @@ public class Task6_TaskService<T> {
         return tasks.stream()
                 .sorted(Comparator.comparing(Task::getDate))
                 .collect(Collectors.toList());
+    }
+
+    public List<Task<T>> getAll() {
+        return tasks;
     }
 }

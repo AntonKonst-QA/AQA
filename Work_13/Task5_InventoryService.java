@@ -56,4 +56,14 @@ public class Task5_InventoryService {
                 .filter(p -> p.getPrice() <= maxPrice)
                 .collect(Collectors.toList());
     }
+
+    public void setInventoryOpen(boolean inventoryOpenb) {
+        this.isInventoryOpen = inventoryOpenb;
+    }
+
+    public List<Product> getAll() {
+        return storage.values().stream()
+                .flatMap(List::stream)
+                .collect(Collectors.toList());
+    }
 }
