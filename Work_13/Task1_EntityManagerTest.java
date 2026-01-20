@@ -1,5 +1,6 @@
 package Homework.Work_13;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -7,8 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class Task1_EntityManagerTest {
-    Task1_EntityManager<User> checker = new Task1_EntityManager<>();
 
+    private Task1_EntityManager<User> checker;
+
+    @BeforeEach
+    void setUp() {
+        checker = new Task1_EntityManager<>();
+    }
     @Test //Тест добавления
     void shouldAddEntity() {
 

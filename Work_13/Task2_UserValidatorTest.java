@@ -1,5 +1,6 @@
 package Homework.Work_13;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
@@ -7,10 +8,13 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class Task2_UserValidatorTest {
 
-    @Test //Валидный пользователь
-    void shuoldPassValidationForValidUser() {
-        Task2_UserValidator.validationEnable = true;
+    @BeforeEach
+    void resetFlag() {
+        Task2_UserValidator.validationEnable  = true;
+    }
 
+    @Test //Валидный пользователь
+    void shouldPassValidationForValidUser() {
         UserData userData = new UserData("Anton", 38, "anton@email.com");
         assertDoesNotThrow(() -> Task2_UserValidator.validate(userData));
     }

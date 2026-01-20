@@ -45,7 +45,7 @@ class Task<T> {
 public class Task6_TaskService<T> {
     private final List<Task<T>> tasks = new ArrayList<>();
 
-    public void addTask(Task<T> task) {
+    public synchronized void addTask(Task<T> task) {
         boolean exists = tasks.stream()
                 . anyMatch(t -> t.getId().equals(task.getId()));
         if (!exists) {
@@ -76,6 +76,6 @@ public class Task6_TaskService<T> {
     }
 
     public List<Task<T>> getAll() {
-        return tasks;
+        return Collections.unmodifiableList(tasks);
     }
 }
