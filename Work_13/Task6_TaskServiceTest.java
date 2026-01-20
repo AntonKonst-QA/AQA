@@ -30,7 +30,7 @@ public class Task6_TaskServiceTest {
 
     @Test // Фильтрация
     void shouldFilterByStatus() {
-        Task6_TaskService service = new Task6_TaskService();
+        Task6_TaskService<Integer> service = new Task6_TaskService();
 
         service.addTask(new Task<>(1, Status.OPEN, Priority.HIGH, LocalDate.now()));
         service.addTask(new Task<>(2, Status.DONE, Priority.MEDIUM, LocalDate.now()));
