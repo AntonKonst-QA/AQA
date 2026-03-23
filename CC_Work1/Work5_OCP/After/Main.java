@@ -2,8 +2,9 @@ package Work5_OCP.After;
 
 public class Main {
     public static void main(String[] args) {
-        PaymentProcessor payment = new CreditCard();
+        double orderAmount = 100.0;
 
-        payment.processPayment(100.0);
+        PaymentService service = new PaymentService(new CreditCard());
+        service.execute(orderAmount);
     }
 }

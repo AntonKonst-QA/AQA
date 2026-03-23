@@ -6,21 +6,24 @@ public class Bird {
     }
 }
 
-class FlyingBurd extends Bird {
+interface Flyable {
+    public void fly();
+}
+
+interface Swimmable{
+    public void swim();
+}
+
+class Sparrow extends Bird implements Flyable {
+    @Override
     public void fly() {
-        System.out.println("Птица летит");
+        System.out.println("Воробей летает");
     }
 }
 
-class NonFlyingBurd extends Bird {
+class Penguin extends Bird implements Swimmable {
+    @Override
     public void swim() {
-        System.out.println("Птица плывет");
+        System.out.println("Пингвин плавает");
     }
-}
-class Sparrow extends FlyingBurd {
-
-}
-
-class Penguin extends NonFlyingBurd {
-
 }

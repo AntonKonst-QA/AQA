@@ -16,13 +16,13 @@ class SmsSender implements MessageSender {
 }
 
 class NotificationService {
-    private MessageSender sender;
+    final MessageSender sender;
 
     public NotificationService(MessageSender sender) {
         this.sender = sender;
     }
 
-    void sendNotification(String message) {
+    public void sendNotification(String message) {
         sender.send(message);
     }
 }

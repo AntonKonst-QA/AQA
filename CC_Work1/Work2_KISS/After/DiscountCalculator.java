@@ -5,14 +5,14 @@ public class DiscountCalculator {
         double discount = 0.0;
 
         if (isLoyalCustomer && isFirstPurchase) {
-            return price * 0.10;
+            return price - price * 0.10;
         }
         if (isLoyalCustomer) {
-            return price * 0.05;
+            return price - price * 0.05;
         }
         if (hasCoupon) {
-            return price * 0.07;
+            return price - price * 0.07;
         }
-        return price * 0.02;
+        return price - price * 0.02;
     }
 }

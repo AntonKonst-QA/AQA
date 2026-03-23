@@ -20,3 +20,11 @@ class Programmer implements Workable, Eatable {
         System.out.println("Программист обедает");;
     }
 }
+
+class Robot implements Workable {
+
+    @Override
+    public void work() {
+        System.out.println("Робот работает без обеда, сна и выходных");
+    }
+}

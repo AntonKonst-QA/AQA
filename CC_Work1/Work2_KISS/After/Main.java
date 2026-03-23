@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         DiscountCalculator discountCalculator = new DiscountCalculator();
 
-        double result = discountCalculator.calculateDiscount(100, true, false, true);
+        double result = discountCalculator.calculateDiscount(100, true, true, true);
 
-        System.out.println("Скидка составила: " + result);
+        System.out.println("Цена с учетом скидки: " + result);
     }
 }
