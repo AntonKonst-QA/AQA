@@ -9,12 +9,12 @@ public class Main {
         Logger exception1 = Logger.getInstance();
         Logger exception2 = Logger.getInstance();
 
-        info1.info = "Info1";
-        info2.info = "Info2";
-        error1.error = "Error1";
-        error2.error = "Error2";
-        exception1.exception = "Exception1";
-        exception2.exception = "Exception2";
+        info1.setInfo("Info1");
+        info2.setInfo("Info2");
+        error1.setError("Error1");
+        error2.setError("Error2");
+        exception1.setException("Exception1");
+        exception2.setException("Exception2");
 
         info1.printLog();
         info2.printLog();

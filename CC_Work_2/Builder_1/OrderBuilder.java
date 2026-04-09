@@ -20,7 +20,7 @@ public class OrderBuilder {
         return this;
     }
 
-    public Order builder() {
+    public Order build() {
         return new Order(this);
     }
 }

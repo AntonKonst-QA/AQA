@@ -1,19 +1,43 @@
 package Practice_2.Singltone_2;
 
 public class Logger {
-    public String info = "No info";
-    public String error = "No error";
-    public String exception = "No exception";
+    private String info = "No info";
+    private String error = "No error";
+    private String exception = "No exception";
 
-    private static Logger instanse;
+    private static Logger instance;
 
     private Logger() {}
 
     public static Logger getInstance() {
-        if (instanse == null) {
-            instanse = new Logger();
+        if (instance == null) {
+            instance = new Logger();
         }
-        return instanse;
+        return instance;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public String getError() {
+        return error;
+    }
+
+    public String getException() {
+        return exception;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public void setError(String error) {
+        this.error = error;
+    }
+
+    public void setException(String exception) {
+        this.exception = exception;
     }
 
     public void printLog() {

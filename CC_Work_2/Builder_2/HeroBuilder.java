@@ -32,7 +32,7 @@ public class HeroBuilder {
         return this;
     }
 
-    public Hero builder() {
+    public Hero build() {
         return new Hero(this);
     }
 }

@@ -9,12 +9,12 @@ public class Main {
         ConfigurationManager log1 = ConfigurationManager.getInstance();
         ConfigurationManager log2 = ConfigurationManager.getInstance();
 
-        url1.dbUrl = "URL1";
-        url2.dbUrl = "URL2";
-        folder1.folderPath = "Folder1";
-        folder2.folderPath = "Folder2";
-        log1.logPath = "Log1";
-        log2.logPath = "Log2";
+        url1.setDbUrl("URL1");
+        url2.setDbUrl("URL2");
+        folder1.setFolderPath("Folder1");;
+        folder2.setFolderPath("Folder2");
+        log1.setLogPath("Log1");
+        log2.setLogPath("Log2");
 
         url1.printConfig();
         url2.printConfig();

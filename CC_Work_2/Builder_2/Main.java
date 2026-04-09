@@ -8,7 +8,7 @@ public class Main {
                 .setDamage(40)
                 .setArmor(10)
                 .setMagic(50)
-                .builder();
+                .build();
 
         System.out.println(hero);
     }

@@ -6,7 +6,7 @@ public class Main {
                 .setProduct("Молоко")
                 .setDiscount(10)
                 .setPaymentMethod("Credit Card")
-                .builder();
+                .build();
         System.out.println(order);
     }
 }
